@@ -9,6 +9,32 @@
 
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
+function multiples(n){
+  if(n%3===0 && n%5===0){
+    return "FizBuzz";
+  }else if(n%3===0){
+    return "Fizz";
+  }else if(n%5===0){
+    return "Buzz";
+  }else{
+    return n;
+  }
+  
+}
+arr.map(multiples).forEach(n=>console.log(n));
+
+arr
+
+// var names = ["Daniel", "mozafar", "irina"];
+
+
+// function formatName(name) {
+//   return name.split("")[0].toUpperCase() + name.slice(1);
+// }
+
+// names.map(formatName).forEach(function(name, index) {
+//   console.log(index + ": " + name);
+// });
 /* EXPECTED OUTPUT */
 
 /*

@@ -10,8 +10,24 @@
 
     Some string methods that might help you here are .replace() and .substring(). 
 */
+/*--- STEPS --*/
+//filter out the ones with a percentage
+//turn the strings to float values
+//find the first one that falls with in the required range
 
-function findSafeOxygenLevel() {}
+function oxygenLevel(n){
+  if(parseFloat(n)>19.5 && parseFloat(n)< 23.5){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+function findSafeOxygenLevel(list) {
+  var result = list.filter(item => item.includes('%'));
+  return result.find(oxygenLevel);
+}
+console.log(findSafeOxygenLevel(["200%", "-21.5%", "20", "apes", "21.1%"]));
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

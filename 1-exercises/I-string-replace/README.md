@@ -11,7 +11,7 @@ console.log(result);
 This works for whole words like above or for single letters
 
 ```js
-let greeting = "Dog";
+let greeting = "Dogd";
 let result = greeting.replace("D", "F"); // Returns "Fog"
 console.log(result);
 ```
