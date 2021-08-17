@@ -1,14 +1,5 @@
-const traineeGrades = {
-  tom: 20,
-  george: 17,
-  abdul: 19,
-};
-
-for(i in traineeGrades){
-  if(traineeGrades[i]>18){
-    console.log(`${i.toUpperCase()}` + " -" + `${traineeGrades[i]}`);
-  }
+function numObj(s){
+  let result = s.map(n => Object.assign({}, n));
+  return result;
 }
-// Prints
-// TOM - 20
-// ABDUL - 19
+console.log(numObj([118,117,120]))

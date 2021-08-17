@@ -15,7 +15,26 @@
   
 */
 
-function getSettlers() {}
+function getSettlers(arr) {
+  return arr.filter(item => item[0] === "A" && item.split(" ").includes("family"));
+}
+let voyagers = [
+    "Adam family",
+    "Potter family",
+    "Eric",
+    "Aldous",
+    "Button family",
+    "Jude",
+    "Carmichael",
+    "Bunny",
+    "Asimov",
+    "Oscar family",
+    "Avery family",
+    "Archer family",
+    "Just A. family",
+    "A Great family",
+  ];
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
